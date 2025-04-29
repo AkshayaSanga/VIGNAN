@@ -13,10 +13,19 @@
         .header {
             text-align: center;
             margin-bottom: 20px;
+            background-color: #f0f0f0;
+            padding: 20px;
         }
         .header h1 {
             font-size: 80px;
             font-weight: bold;
+            color: #00698f;
+        }
+        .red-line {
+            height: 5px;
+            background-color: red;
+            width: 100%;
+            margin-bottom: 20px;
         }
         .nav-menu {
             background-color: #333;
@@ -37,20 +46,50 @@
             color: #fff;
             text-decoration: none;
         }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>Vignan Institute of Technology and Science</h1>
+        <div class="red-line"></div>
     </div>
     <div class="nav-menu">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Registration</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
         </ul>
+    </div>
+    <div class="content">
+        <h2 id="home">Welcome to Vignan Institute of Technology and Science</h2>
+        <p>This is a premier institution dedicated to providing quality education and research opportunities.</p>
+        <h2 id="about-us">About Us</h2>
+        <p>Vignan Institute of Technology and Science is a renowned institution that offers various undergraduate and postgraduate programs.</p>
+        <h2 id="login">Login</h2>
+        <form>
+            <input type="text" placeholder="Username"><br><br>
+            <input type="password" placeholder="Password"><br><br>
+            <button>Login</button>
+        </form>
+        <h2 id="registration">Registration</h2>
+        <form>
+            <input type="text" placeholder="Name"><br><br>
+            <input type="email" placeholder="Email"><br><br>
+            <button>Register</button>
+        </form>
+        <h2 id="contact-us">Contact Us</h2>
+        <p>Phone: 1234567890</p>
+        <p>Email: [info@vignanits.edu](mailto:info@vignanits.edu)</p>
     </div>
 </body>
 </html>
